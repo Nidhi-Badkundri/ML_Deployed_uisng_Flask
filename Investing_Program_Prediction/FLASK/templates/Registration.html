@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="icon" href="../static\Investment-Logo.png" type="image/png" sizes="18*16">
+<title>REGISTRATION</title>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+   box-color: #000000;}
+
+.button {
+  border-radius: 12px;
+  background-color: #00BFFF;
+  border: 1;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 1px;
+  cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display:table;
+
+}
+
+</style>
+<body bgcolor="#C0C0C0">
+
+<form action="/action_page.php" style="border:2px solid #ccc">
+  <div class="container">
+  <center>
+    <img src="../static\Investment-Logo.png" height="350" width="550">
+    <h1>Registration</h1>
+    <b><p>Fill the details to create a account</p></b>
+    <br>
+
+    <label for="email"><b>Moblie No.</b></label>
+    <input type="text" placeholder="Moblie No." name="Mobile" required>
+    <br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+   <br> 
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+   
+
+    <div class="clearfix">
+      <a href="../templates\Registration.html"><input type="reset" class="button" value="Reset"></a>
+      <a href="../templates\home.html"><input type="button" class="button" value="Sign Up">
+    </div>
+  </div>
+</form>
+</center>
+<a href="../templates\home.html" style="right: 10px;"><button style="background-color: #007bff; position: absolute; right: 10px; color: #000000; font-weight: bold; padding: 10px 20px; border: 2px solid black; border-radius: 5px; cursor: pointer; font-size: 18px; width:200px ">Back To Homepage</button></a>
+</body>
+</html>
