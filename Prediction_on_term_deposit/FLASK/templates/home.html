@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#C0C0C0">
+
+   <center><p style="font-size: 50px; font-weight: bold; color:#393cdd ;">Prediction on Term Deposit</p></center>
+
+    <form action="/reglink" method="post">
+    <h4>Bank client data</h4>
+    Enter Age : <input type="number" name="age">
+    <br>
+    <br>
+    Select Job Type : <select name="Job" id="Job">
+        <option value="blue-collar">blue-collar</option>
+        <option value="management">management</option>
+        <option value="technician">technician</option>
+        <option value="admin">admin</option>
+        <option value="services">services</option>
+        <option value="retired">retired</option>
+        <option value="self-employed">self-employed</option>
+        <option value="entrepreneur">entrepreneur</option>
+        <option value="unemployed">unemployed</option>
+        <option value="housemaid">housemaid</option>
+        <option value="student">student</option>
+        <option value="unknown">unknown</option>
+    </select>
+    <br>
+    <br>
+    Marital Status : <select name="Marital_status" id="Marital_status">
+        <option value="single">single</option>
+        <option value="married">married</option>
+        <option value="divorced">divorced</option>
+    </select>
+    <br>
+    <br>
+    Education Status : <select name="Education" id="Education" >
+        <option value="primary ">primary </option>
+        <option value="secondary">secondary</option>
+        <option value="tertiary">tertiary</option>
+        <option value="unknown">unknown</option>
+    </select>
+    <br>
+    <br>
+    Has Credit in default : <select name="Credit" id="Credit">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
+    <br>
+    <br>
+    Avg yearly balance : <input type="number" name="Avg">
+    <br>
+    <br>
+    Has housing loan : <select name="housing" id="housing">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
+    Has personal loan : <select name="Personal" id="Personal">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
+    <br>
+    <br>
+    <h4>Related with the last contact of the current campaign</h4>
+    contact communication type : <select name="Contact" id="Contact">
+        <option value="cellular">cellular</option>
+        <option value="telephone">telephone</option>
+        <option value="unknown">unknown</option>
+    </select>
+    <br>
+    <br>
+    Duration (last contact duration, in seconds) : <input type="number" name="Duration">
+    <br>
+    <br>
+    Number of contacts performed during this campaign and for this client : <input type="number" name="campaign">
+    <br>
+    <br>
+    Pdays(Number of days passed client was last contacted  from previous campaign) 
+    <br>
+    Put (-1) if not contacted previously : <input type="number" name="contacted">
+    <br>
+    <br>
+    Previous (number of contacts performed before this campaign and for this client) : <input type="number" name="previously">
+    <br>
+    <br>
+    poutcome (outcome of the previous marketing campaign) : <select name="outcome" id="outcome">
+        <option value="success">success</option>
+        <option value="unknown">unknown</option>
+        <option value="failure">failure</option>
+        <option value="other">other</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    
+    <center> <input type="submit" value="Has the client subscribed a term deposit" cursor="pointer"  style="font-weight: bold; background-color: #008CBA; color: white; font-size: 16px; padding: 10px 20px; cursor: pointer; border: 1px solid #000000;"></center>
+    </form>
+    
+
+
+
+    
+</body>
+</html>
